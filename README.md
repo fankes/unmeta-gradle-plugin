@@ -9,6 +9,12 @@
 
 </p>
 
+> This is a fork of [Unmeta](https://github.com/axzae/unmeta-gradle-plugin).
+>
+> Supported remove `@Metadata` and `@SourceDebugExtension`.
+>
+> Clone this repository and run `./gradlew publishToMavenLocal` to use the plugin.
+
 A gradle plugin for Android Project to remove all Kotlin [`@DebugMetadata`][debugmetadata] annotations from the compiled
 classes.
 
@@ -112,8 +118,13 @@ Feel free to open an issue or submit a pull request for any bugs/improvements.
     SOFTWARE.
 
 [1]: https://github.com/Kotlin/kotlinx.coroutines/issues/2267#issuecomment-698826645
+
 [debugmetadata]: https://github.com/JetBrains/kotlin/blob/master/libraries/stdlib/jvm/src/kotlin/coroutines/jvm/internal/DebugMetadata.kt
+
 [pluginportal]: https://plugins.gradle.org/plugin/com.axzae.unmeta
+
 [mavencentral]: https://central.sonatype.com/artifact/com.axzae/unmeta
+
 [actions]: https://github.com/axzae/unmeta-gradle-plugin/actions
+
 [releases]: https://github.com/axzae/unmeta-gradle-plugin/releases
