@@ -90,7 +90,7 @@ abstract class UnmetaTask : DefaultTask() {
                     classReader.accept(unmetaClassVisitor, ClassReader.SKIP_DEBUG)
                     if (unmetaClassVisitor.isModified) {
                         ++modifiedFiles
-                        log("- Removed @DebugMetadata annotation from ${it.toRelativeString(basePath)}")
+                        log("- Removed @${unmetaClassVisitor.modifiedClassName} annotation from ${it.toRelativeString(basePath)}")
                         it.writeBytes(classWriter.toByteArray())
                     }
                 } catch (e: UnsupportedOperationException) {
