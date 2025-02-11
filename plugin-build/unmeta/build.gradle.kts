@@ -1,5 +1,5 @@
 plugins {
-    signing
+//    signing
     kotlin("jvm")
     `java-gradle-plugin`
     alias(libs.plugins.pluginPublish)
